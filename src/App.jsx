@@ -30,7 +30,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div class = "a">
       {loading && <div>Loading...</div>}
         {products.map((product) => (
           <ProductCard data={product} />

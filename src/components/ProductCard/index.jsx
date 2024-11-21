@@ -5,10 +5,15 @@ export function ProductCard(props){
 
     return(
         <div className='product-card'>
-            <img width="200" src={image} alt="" />
-            <div>{category}</div>
-            <h4>{title}</h4>
-            <div>{price}</div>
+            <div className="iBLock">
+                <img className="i" width="200" src={image} alt="" />
+            </div>
+            <div className="c">{category}</div>
+            <h4 className="h">{title}</h4>
+            <div className="Card">
+                <div className="p">${price}</div>
+                <button className="b">Add to card</button>
+            </div>
         </div>
     )
 }
